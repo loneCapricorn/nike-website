@@ -1,5 +1,4 @@
-import Button from "../components";
-import ShoeCard from "../components";
+import { Button, ShoeCard } from "../components";
 import { arrowRight } from "../assets/icons";
 import { bigShoe1 } from "../assets/images";
 import { shoes, statistics } from "../constants";

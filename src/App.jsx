@@ -8,7 +8,7 @@ import {
   Subscribe,
   SuperQuality,
 } from "./sections/index.js";
-import Nav from "./components";
+import { Nav } from "./components";
 
 const App = () => {
   return (
