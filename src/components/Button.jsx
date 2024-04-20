@@ -6,6 +6,7 @@ const Button = ({
   backgroundColor,
   borderColor,
   textColor,
+  fullWidth,
 }) => {
   return (
     <button
@@ -13,7 +14,7 @@ const Button = ({
         backgroundColor
           ? `${backgroundColor} ${borderColor} ${textColor}`
           : "bg-coral-red text-white border-coral-red"
-      }
+      } ${fullWidth && "w-full"}
     `}
     >
       {label}
@@ -31,6 +32,10 @@ const Button = ({
 Button.propTypes = {
   label: PropTypes.string.isRequired,
   iconURL: PropTypes.string,
+  backgroundColor: PropTypes.string,
+  borderColor: PropTypes.string,
+  textColor: PropTypes.string,
+  fullWidth: PropTypes.bool,
 };
 
 export default Button;
