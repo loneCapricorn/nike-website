@@ -22,14 +22,14 @@ const Hero = () => {
             The New Arrival
           </span>
           <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span>
+          <span className="text-coral-red inline-block mt-3 mr-1">Nike</span>
           Shoes
         </h1>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-8 pb-14 sm:max-w-sm">
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
-        <Button label={"Shop Now"} iconUrl={arrowRight} />
+        <Button label={"Shop Now"} iconURL={arrowRight} />
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat) => (
             <div key={stat.label}>
